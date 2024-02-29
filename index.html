@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfloio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f96c1df59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!--This is for Header & Navigation Bar-->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <li class="fas fa-bars" onclick="openmenu()"></li>
+            </nav>
+
+            <div class="header-text">
+                <br>
+
+                <h1>Hi! I'm <br><span>Nirbhay Bansal</span>
+                    <br>
+                    <h2>Software Development Engineer<i>(from India)</i></h2>
+
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!--about Section-->
+    <div id="about">
+        <div class="row">
+
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+
+            <div class="about-col-2">
+
+                <h1 class="sub-title">About me</h1>
+                <p>Experienced Software Engineer specializing in the IT Healthcare and Conversational AI domains.
+                    Proficient in HTML, CSS, JavaScript, Java, Spring, Spring Boot, JUnit, Mockito, Hibernate, MySQL,
+                    and MongoDB. Skilled in Design Patterns, Data Structures, Algorithms, and Object-Oriented
+                    Programming. Basic understanding of System Design.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>
+                            Core Java, J2EE, HTML, CSS, JavaScript
+                        </li>
+                        <li><span>Frameworks</span><br>
+                            Spring, SpringBoot, JPA, Hibernate, Junit,
+                            Mockito
+                        </li>
+
+                        <li><span>Database</span><br>
+                            MYSQL, MongoDB
+                        </li>
+                        <li><span>Other Tools</span><br>
+                            Postman, Intellij,IDEA, Ecllipse,
+                            Mirth,Robo3T,Winscp, Xshell
+                        </li>
+                        <li><span>Other Skills </span><br>
+                            Data Structures& Algorithms, OOPs,
+                            Design Patterns, Basic System Design,
+                            HL7 Standards (FHIR), REST APIs
+
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <hr>
+                            <span>My Personal Health Record Express (MphrX)<br>
+                                Healthcare Product Based Company<br>
+                                04/2021 - 02/2023, Gurgaon</span>
+                            <hr><br>
+                            <u>Projects</u></u><br>
+                            Ramsay Sime Derby HealthCare (Malaysia)<br>
+                            • Analyzed & configured the project as per functional specifications via
+                            product configs<br>
+                            • Integrated external RSDH Appointment Schedular via REST APIs &
+                            implemented its fetch slots, booking, rescheduling & cancel
+                            functionality in Java<br>
+                            • Implemented some of triggers in Java<br>
+                            • Creating scripts in JavaScript for Mongo DB rectifications<br>
+                            • Responsible for debugging and fixing the product bugs and defects<br>
+                            • Developed & unit tested mirth channels in JavaScript<br>
+                            • Externalized HTMLs & made changes as per requirement<br>
+                            • Involved in deployment of builds & SDLC of projects<br>
+                            • Responsible for handling client calls for technical discussions<br>
+                            • Created Technical Designs Documents of the project<br><br>
+                            Albert Einstein (Brazil)<br>
+                            • Done Proof of Concept of Data Transformation from SQL DB to
+                            Mongo DB via Apache Nifi<br>
+                            • Written many Mongo Scripts in JavaScript for DB rectifications
+                            • Fixed bugs<br>
+                            • Created Data Flow Diagram of Data Transformation Problem via
+                            Databricks using draw.io<br>
+                            Columbia Asia (Malaysia, Indonesia, Vietnam)<br>
+                            • Debugging & writing mongo Scripts in JavaScript for live Database
+                            rectifications<br><br>
+                            ODT, Agfa<br>
+                            • Bugs debugging & troubleshooting during Unit Testing<br>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> B.Tech (Computer Science Engineering)</span><br>
+                            JMIT (Kurukshetra University)<br>
+                            08/2017 - 08/2021, 85.7%</li>
+                        <li><span> Secondary Education</span><br>
+                            S.D. Public School (C.B.S.E)<br>
+                            04/2015 - 04/2017, 95.2%</li>
+                        <li><span>Matriculation</span><br>
+                            St. Thomas School (I.C.S.E)<br>
+                            04/2015, 89.1%</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--------------services-------------->
+
+    <div id="service">
+        <div class="container">
+
+            <h1 class="sub-title" style="margin-left:400px;">My Services</h1>
+
+            <div class="service-list">
+
+                <div>
+                    <i class="fa-solid fa-code-pull-request"></i>
+                    <h2>Full Stack Web Development</h2>
+                    <p>I have created many websites and have hands on experience.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code-pull-request"></i>
+                    <h2>Desktop Application</h2>
+                    <p>Have created desktop Apps like Restaurant Managemnet System </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code-pull-request"></i>
+                    <h2>Andriod App Development</h2>
+                    <p>Have done training in Android</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Portfolio-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" style="margin-left:400px;">My Projects</h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img class="project-img" src="images/socialMedia.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects u t talented people inthe world</p>
+                        <a href="#"><i class="fab fa-free-code-camp"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="project-img" src="images/game.png">
+                    <div class="layer">
+                        <h3>Mystery Word Game</h3>
+                        <p>The app connects u t talented people inthe world</p>
+                        <a href="#"><i class="fab fa-free-code-camp"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img class="project-img" src="images/Library.png">
+                    <div class="layer">
+                        <h3>Libary Managemnt System</h3>
+                        <p>The app connects u t talented people inthe world</p>
+                        <a href="#"><i class="fab fa-free-code-camp"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn">See More</a>
+
+        </div>
+    </div>
+
+
+    <!-- -------------contact--------- -->
+    <div id="contact">
+        <div class="continer">
+            <div class="row">
+
+                <div class="contact-mid">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-thin fa-paper-plane-top"><b>Email :</b></i>nirbhaybansal28@gmail.com</p>
+                    <br>
+                    <p><i class="fa-thin fa-paper-plane-top"><b>Contact :</b></i>8685099830</p>
+
+                    <br>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/geekynib28061999/"><i class="fa fa-linkedin-square "
+                                style="font-size:36px; margin-left: auto;"></i></a>
+                        <a href="https://leetcode.com/geekyNib">LeetCode</a>
+                        <a href="https://github.com/nibchee"><i class="fab fa-github-square "
+                                style="font-size:36px; margin-left: auto;"></i></a>
+
+                    </div>
+
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <!--
+              <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+-->
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright <i class="fa-thin fa-copyright">by Nirbhay</i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        // console.log("Nirbhay Tablinks"+tablinks)
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                //      console.log("Nirbhay Tablinks"+tablink)
+                tablink.classList.remove("active-link")
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzVjxN5XpBnAOtZcm0vgpTyTf9eBFmdf6TZlPmDCjsKOdKjMuN35Ig8aO6Yt6FLLmx2ZQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
